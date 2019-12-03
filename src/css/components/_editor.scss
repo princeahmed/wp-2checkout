@@ -1,0 +1,100 @@
+#gjs {
+  border: 3px solid #444;
+}
+
+.gjs-cv-canvas, .gjs-pn-commands {
+  width: 78%;
+}
+
+.gjs-pn-options {
+  right: 22%;
+}
+
+.gjs-pn-btn {
+  font-size: 18px;
+}
+
+.gjs-pn-views-container, .gjs-pn-views {
+  width: 22%;
+}
+
+// Metabox
+#wp_popup_settings_metabox, #wp_popup_template_editor_metabox, #wp_popup_template_selector_metabox {
+  & > .inside {
+    padding: 0;
+    margin: 0;
+
+    .prince-metabox-tabs {
+      padding: 0;
+
+      .prince-metabox-nav, .prince-metabox-panels {
+        margin-top: 0;
+      }
+    }
+
+  }
+}
+
+.templates-select-tabs {
+  display: flex;
+
+  &__item {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    background: #444444;
+    color: #fff;
+    text-decoration: none;
+
+    &:first-child {
+      border-right: 1px solid #ddd;
+    }
+
+    &.active {
+      background: #ddd;
+    }
+  }
+}
+
+.templates-preview {
+  max-height: 400px;
+  overflow-x: auto;
+}
+
+.template-thumbs__item {
+  margin: 10px 5px;
+  display: flex;
+  flex-flow: column;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+
+  .template-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .template-thumb {
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+    &-hover {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      top: 0;
+      background: rgba(#000, .5);
+    }
+
+    &:hover .template-thumb-hover {
+      display: flex;
+    }
+  }
+}
+
